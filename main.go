@@ -35,11 +35,11 @@ func main() {
 	{
 		items := api.Group("/items")
 		{
-			items.GET("", itemHandler.GetAll)
-			items.GET("/:id", itemHandler.GetByID)
-			items.POST("", itemHandler.Create)
-			items.PUT("/:id", itemHandler.Update)
-			items.DELETE("/:id", itemHandler.Delete)
+			items.GET("", itemHandler.GetAll())
+			items.GET("/:id", itemHandler.GetByID())
+			items.POST("", itemHandler.Create())
+			items.PUT("/:id", itemHandler.Update())
+			items.DELETE("/:id", itemHandler.Delete())
 		}
 	}
 
