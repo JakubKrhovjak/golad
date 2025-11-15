@@ -3,8 +3,8 @@ package main
 import (
 	"awesomeProject2/database"
 	"awesomeProject2/item"
-	"log"
 	"github.com/gin-gonic/gin"
+	"log"
 )
 
 func main() {
@@ -15,9 +15,9 @@ func main() {
 		log.Fatalf("Failed to connect to database: %v", err)
 	}
 
-	// Auto migrate database schema
-	if err := db.AutoMigrate(&item.Item{}); err != nil {
-		log.Fatalf("Failed to migrate database: %v", err)
+	// Run migrations
+	if err := database.RunMigrations(db, "./migrations"); err != nil {
+		log.Fatalf("Failed to run migrations: %v", err)
 	}
 
 	// Initialize service
