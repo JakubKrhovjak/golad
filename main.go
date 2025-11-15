@@ -3,8 +3,9 @@ package main
 import (
 	"awesomeProject2/database"
 	"awesomeProject2/item"
-	"github.com/gin-gonic/gin"
 	"log"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {

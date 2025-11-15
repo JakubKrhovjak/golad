@@ -12,7 +12,13 @@
       "Bash(docker ps:*)",
       "Bash(docker exec:*)",
       "Bash(lsof:*)",
-      "Bash(xargs kill:*)"
+      "Bash(xargs kill:*)",
+      "Bash(rm:*)",
+      "Bash(curl:*)",
+      "Bash(sh:*)",
+      "Bash(atlas version:*)",
+      "Bash(atlas migrate diff:*)",
+      "Bash(go mod tidy:*)"
     ],
     "deny": [],
     "ask": []

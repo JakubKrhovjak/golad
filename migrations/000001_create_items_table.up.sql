@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS items (
     created_at TIMESTAMP WITH TIME ZONE,
     updated_at TIMESTAMP WITH TIME ZONE,
     deleted_at TIMESTAMP WITH TIME ZONE,
-    name VARCHAR(255) NOT NULL
+    name VARCHAR(255) NOT NULL,
     description TEXT
 );
 
