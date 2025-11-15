@@ -38,6 +38,7 @@ func (h *Handler) GetByID(c *gin.Context) {
 	}
 
 	item, err := h.service.GetByID(uint(id))
+
 	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": err.Error()})
 		return
